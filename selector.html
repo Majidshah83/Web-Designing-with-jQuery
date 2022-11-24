@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <title>Jquery Selctortitle</title>
+</head>
+<body>
+   <p id="first">This first line</p>
+   <p class="2nd">This 2nd line</p>
+   <p>This 3rd line</p>
+   <p>This 4th line</p>
+   <h1>
+    Header one
+   </h1>
+   <h2> header two</h2>
+   <h3>header three</h3>
+</body>
+<script>
+    $(document).ready(function(){
+      
+    //   $('*').css('background','black');
+      $('p').css('background','yellow');
+      $('#first').css('background','red');
+      $('.2nd').css('color','white');
+      $('.2nd').css('background','blue');
+      $('h1,h2,h3').css('background','green');
+      
+      
+
+
+    });
+
+</script>
+</html>
