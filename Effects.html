@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <title> Fading Effects</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #div1{
+            margin:0 auto;
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            /* display: none; */
+
+        }
+        #div2{
+            width: 100px;
+            margin:0 auto;
+            height: 100px;
+            background-color: yellow;
+            /* display: none; */
+        }
+        #div3{
+            width: 100px;
+            margin:0 auto;
+            height: 100px;
+            background-color: red;
+            /* display: none; */
+
+        }
+    </style>
+</head>
+<body>
+    <h1> Fade In</h1>
+    <button id="show">Click</button> <br>
+    <br>
+    <div id="div1">
+    
+    </div>
+    <div id="div2">
+        
+    </div>
+    <div id="div3">
+        
+    </div>
+    
+</body>
+<script>
+    $(document).ready(function(){
+     $('#show').click(function(){
+    
+    //   $('#div1').fadeIn();
+    //   $('#div2').fadeIn(2000);
+    //   $('#div3').fadeIn(7000);
+
+    //    $('#div1').fadeOut();
+    //   $('#div2').fadeOut(2000);
+    //   $('#div3').fadeOut(7000);
+      
+       $('#div1').fadeToggle();
+      $('#div2').fadeToggle(2000);
+      $('#div3').fadeToggle(7000);
+
+     });
+    });
+</script>
+</html>
