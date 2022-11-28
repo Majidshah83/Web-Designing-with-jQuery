@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <title>Effects</title>
+</head>
+<p>
+    This is statment
+</p>
+<h2>
+    This well be show
+</h2>
+<br>
+<button id="hide">Hide</button></br>
+</br>
+<button id="show">show</button> <br>
+<br>
+<button id="showhide">show hide</button>
+
+<body>
+<script>
+    $(document).ready(function()
+    {
+      $('h2').css('display','none');
+     $('#hide').click(function(){
+       $('p').hide(2000);
+       
+     });
+     $('#show').click(function(){
+      
+       $('p').show(2000);
+     });
+     $('#showhide').click(function()
+     {
+        $('p,#show').toggle(2000);
+     });
+    });
+</script>
+</body>
+</html>
