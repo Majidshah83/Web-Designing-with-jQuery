@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <title>Add Elements</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Append function use</h1>
+    <p id="para">update</p>
+    <button id="click">Click</button>
+
+</body>
+<script>
+    $(document).ready(function(){
+     $('#click').click(function(){
+    $('#para').append('<br> Helo majid </b>')
+    // $('#para').append('<h1> Helo majid </h1>')
+        
+     })
+    });
+</script>
+</html>
