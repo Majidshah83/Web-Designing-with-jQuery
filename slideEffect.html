@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <title>Sliding Effects</title>
+    <style>
+    body{
+        text-align: center;
+    }
+     #pannel1,#panel2{
+        margin:0 auto;
+        width: 400px;
+        text-align: center;
+        background-color: lightgreen;
+        border: 1px solid #adadad;
+     }
+     #panel2{
+     padding: 50px;
+     
+     }
+    </style>
+</head>
+<body>
+    <h1>Slide Down</h1>
+    <div id="pannel1">
+      This is pannel 1
+    </div>
+    <div id="panel2">
+      This is pannel 2
+
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+    $('#pannel1').click(function(){
+        // alert();
+     $('#panel2').slideToggle();
+    });
+       $('#pannel2').click(function(){
+        // alert();
+     $('#panel1').slideToggle();
+    });
+    });
+</script>
+</html>
